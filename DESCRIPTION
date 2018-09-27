@@ -1,0 +1,11 @@
+Package: ripeds
+Type: Package
+Title: Download NCES/IPEDS Data
+Version: 0.0.0.9000
+Author: Andrew Coleman
+Maintainer: Andrew Coleman <andrew.e.coleman@gmail.com>
+Description: Retrieves data from NCES/IPEDS sources and formats it for your screen.
+License: MIT
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.0
