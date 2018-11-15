@@ -7,11 +7,11 @@
 ipeds.fetch(year)
 }
 \arguments{
-\item{year}{}
+\item{year}{integer, the 4 digit year for which data will be downloaded}
 }
 \value{
-list, containing data.frames of all the data for the provided year
+list, containing data.frames of the data for the provided year
 }
 \description{
-For the year
+Downloads and reads data from the NCES IPEDS for the year provided.
 }

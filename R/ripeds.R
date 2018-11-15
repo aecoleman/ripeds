@@ -1,25 +1,12 @@
-# setClass('ipeds',
-#          slots = list('directory',
-#                       'offerings',
-#                       'academicCharges',
-#                       'vocationalCharges',
-#                       'headcount',
-#                       'activity',
-#                       'programAwards',
-#                       'demogAwards',
-#                       'ageDemogAwards',
-#                       'distanceEd') )
-
 #' IPEDS fetch
 #'
-#' For the year
+#' Downloads and reads data from the NCES IPEDS for the year provided.
 #'
-#' @param year
+#' @param year integer, the 4 digit year for which data will be downloaded
 #'
-#' @return list, containing data.frames of all the data for the provided year
+#' @return list, containing data.frames of the data for the provided year
 #' @export
 #'
-#' @examples
 ipeds.fetch <- function(year){
 
   # Strings that when combined with sprintf and a year will generate an NCES/IPEDS filename
@@ -29,10 +16,10 @@ ipeds.fetch <- function(year){
                     'IC%04d_PY',
                     'EFFY%04d',
                     'EFIA%04d',
-                    'C%04d_A',
-                    'C%04d_B',
-                    'C%04d_C',
-                    'C%04dDEP')
+                    'C%04d_A')
+                    # 'C%04d_B',
+                    # 'C%04d_C',
+                    # 'C%04dDEP'
 
   temp <- paste0(tempfile(), '.zip')
 
